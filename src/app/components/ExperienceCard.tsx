@@ -19,13 +19,13 @@ export default function ExperienceCard(props: ExperienceCardPropType) {
         {props.intro}
         <ul className="list-disc list-inside">
           {props.bullets.map((b) => (
-            <li>{b}</li>
+            <li key={b}>{b}</li>
           ))}
         </ul>
       </li>
       <div className="flex flex-row space-x-2 items-center">
         {props.skills.map((s) => (
-          <SkillBadge name={s} />
+          <SkillBadge name={s} key={s} />
         ))}
       </div>
     </div>

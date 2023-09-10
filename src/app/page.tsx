@@ -42,7 +42,7 @@ export default function Home() {
           </Link>
           <p className="text-xl text-gray-200">Software Engineer @ Honeywell</p>
           <p className="text-md text-gray-400">
-            I'm a full-stack software engineer interested in blah blah blah
+            I&apos;m a full-stack software engineer interested in blah blah blah
           </p>
         </div>
 
@@ -184,8 +184,8 @@ export default function Home() {
             <p>2017 - 2022</p>
           </div>
           <p>
-            Master's and Bachelor's Degree in Computer Science and Engineering.
-            Published research on Linux Access Control at{" "}
+            Master&apos;s and Bachelor&apos;s Degree in Computer Science and
+            Engineering. Published research on Linux Access Control at{" "}
             <Link
               href="https://dl.acm.org/doi/10.1145/3488932.3527293"
               className="text-red-400 hover:underline"
