@@ -5,7 +5,7 @@ import SkillBadge from "./components/SkillBadge";
 
 export default function Home() {
   return (
-    <div className="flex flex-col w-4/5 mx-auto">
+    <div className="flex flex-col mx-4 md:mx-auto md:w-4/5 space-y-4">
       <div
         id="nav"
         className="text-gray-300 flex flex-row py-8 space-x-4 justify-between sticky top-0 bg-black bg-opacity-80 backdrop-blur-lg"
@@ -13,7 +13,7 @@ export default function Home() {
         <Link href="/">
           <GradientText text="SV" className="font-extrabold text-2xl" />
         </Link>
-        <div className="flex flex-row items-center justify-between space-x-8">
+        <div className="md:flex flex-row items-center justify-between space-x-8 hidden">
           <Link href="#experience" className="hover:text-white">
             Experience
           </Link>
@@ -37,7 +37,7 @@ export default function Home() {
           <Link href="/">
             <GradientText
               text="Sai Varshith"
-              className="text-8xl font-extrabold"
+              className="text-4xl md:text-8xl font-extrabold"
             />
           </Link>
           <p className="text-xl text-gray-200">Software Engineer @ Honeywell</p>
@@ -101,7 +101,7 @@ export default function Home() {
               "React",
               "NodeJS",
               "DotNet",
-              "Postdres",
+              "Postgres",
               "Azure",
               "Kubernetes",
               "Grafana",
@@ -120,7 +120,7 @@ export default function Home() {
             skills={[
               "React",
               "Django",
-              "Postdres",
+              "Postgres",
               "Celery",
               "NodeJS",
               "Azure",
@@ -132,18 +132,18 @@ export default function Home() {
           className="space-y-2 text-gray-200 p-4 hover:bg-gray-500 hover:bg-opacity-20"
         >
           <p className="text-xl font-bold text-gray-200">Skills</p>
-          <div className="flex flex-row justify-between">
+          <div className="flex flex-col md:flex-row justify-between gap-y-2">
             <p className="font-semibold">Languages</p>
-            <div className="flex flex-row space-x-2">
+            <div className="flex flex-row flex-wrap gap-2">
               <SkillBadge name="Python" />
               <SkillBadge name="Java" />
               <SkillBadge name="Typescript" />
               <SkillBadge name="C#" />
             </div>
           </div>
-          <div className="flex flex-row justify-between">
+          <div className="flex flex-col md:flex-row justify-between gap-y-2">
             <p className="font-semibold">Frameworks</p>
-            <div className="flex flex-row space-x-2">
+            <div className="flex flex-row flex-wrap gap-2">
               <SkillBadge name="React" />
               <SkillBadge name="Spring Boot" />
               <SkillBadge name="NodeJS" />
@@ -152,9 +152,9 @@ export default function Home() {
               <SkillBadge name="DotNet Core" />
             </div>
           </div>
-          <div className="flex flex-row justify-between">
+          <div className="flex flex-col md:flex-row justify-between gap-y-2">
             <p className="font-semibold">Technologies</p>
-            <div className="flex flex-row space-x-2">
+            <div className="flex flex-row flex-wrap gap-2">
               <SkillBadge name="Azure" />
               <SkillBadge name="Kubernetes" />
               <SkillBadge name="Docker" />
@@ -177,7 +177,7 @@ export default function Home() {
           className="p-4 hover:bg-gray-500 hover:bg-opacity-20 text-md font-gray-200 space-y-2"
         >
           <p className="text-xl font-bold">Education</p>
-          <div className="flex flex-row justify-between items-center">
+          <div className="flex flex-col justify-start md:flex-row md:justify-between md:items-center">
             <p className="font-semibold">
               Indian Institute of Technology Kharagpur
             </p>
