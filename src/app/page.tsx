@@ -27,12 +27,12 @@ export default function Home() {
             Education
           </Link>
         </div>
-        <p className="text-green-500 animate-pulse duration-1000">
+        <p className="text-green-500 font-bold animate-pulse duration-1000">
           Open to Work!
         </p>
       </div>
 
-      <div className="flex flex-col justify-center h-[50vh] items-center space-y-16">
+      <div className="flex flex-col justify-center items-center space-y-16">
         <div id="main-content" className="text-center space-y-2">
           <Link href="/">
             <GradientText
@@ -42,7 +42,7 @@ export default function Home() {
           </Link>
           <p className="text-xl text-gray-200">Software Engineer @ Honeywell</p>
           <p className="text-md text-gray-400">
-            I&apos;m a full-stack software engineer interested in blah blah blah
+            I build scalable, reliable and user-friendly applications
           </p>
         </div>
 
