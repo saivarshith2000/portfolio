@@ -5,15 +5,15 @@ import SkillBadge from "./components/SkillBadge";
 
 export default function Home() {
   return (
-    <div className="flex flex-col mx-4 md:mx-auto md:w-4/5 space-y-4">
+    <div className="mx-4 flex flex-col space-y-4 md:mx-auto md:w-4/5">
       <div
         id="nav"
-        className="text-gray-300 flex flex-row py-8 space-x-4 justify-between sticky top-0 bg-black bg-opacity-80 backdrop-blur-lg"
+        className="sticky top-0 flex flex-row justify-between space-x-4 bg-black bg-opacity-80 py-8 text-gray-300 backdrop-blur-lg"
       >
         <Link href="/">
-          <GradientText text="SV" className="font-extrabold text-2xl" />
+          <GradientText text="SV" className="text-2xl font-extrabold" />
         </Link>
-        <div className="md:flex flex-row items-center justify-between space-x-8 hidden">
+        <div className="hidden flex-row items-center justify-between space-x-8 md:flex">
           <Link href="#experience" className="hover:text-white">
             Experience
           </Link>
@@ -27,17 +27,17 @@ export default function Home() {
             Education
           </Link>
         </div>
-        <p className="text-green-500 font-bold animate-pulse duration-1000">
+        <p className="animate-pulse font-bold text-green-500 duration-1000">
           Open to Work!
         </p>
       </div>
 
-      <div className="flex flex-col justify-center items-center space-y-16">
-        <div id="main-content" className="text-center space-y-2">
+      <div className="flex flex-col items-center justify-center space-y-16">
+        <div id="main-content" className="space-y-2 text-center">
           <Link href="/">
             <GradientText
               text="Sai Varshith"
-              className="text-4xl md:text-8xl font-extrabold"
+              className="text-4xl font-extrabold md:text-8xl"
             />
           </Link>
           <p className="text-xl text-gray-200">Software Engineer @ Honeywell</p>
@@ -48,7 +48,7 @@ export default function Home() {
 
         <div
           id="contact"
-          className="text-gray-400 font-semibold space-x-4 flex flex-row items-center"
+          className="flex flex-row items-center space-x-4 font-semibold text-gray-400"
         >
           <Link
             className="hover:text-red-500"
@@ -73,7 +73,7 @@ export default function Home() {
           </Link>
           <Link
             href="https://drive.google.com/file/d/1IqHjaFzC7lRqCaLFoP8y_SKS7WRoD_f4/view?usp=drive_link"
-            className="hover:text-gray-200 text-red-500 font-bold"
+            className="font-bold text-red-500 hover:text-gray-200"
             target="_blank"
           >
             Resume
@@ -81,9 +81,9 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="text-gray-300 flex-1 space-y-4">
-        <div id="experience" className="space-y-2 scroll-with-offset">
-          <p className="text-xl font-bold text-gray-200 px-4">Experience</p>
+      <div className="flex-1 space-y-4 text-gray-300">
+        <div id="experience" className="scroll-with-offset space-y-2">
+          <p className="px-4 text-xl font-bold text-gray-200">Experience</p>
           <ExperienceCard
             titleLeft="Software Engineer @ Honeywell"
             titleRight="Since July 2022"
@@ -129,10 +129,10 @@ export default function Home() {
         </div>
         <div
           id="skills"
-          className="space-y-2 text-gray-200 p-4 hover:bg-gray-500 hover:bg-opacity-20"
+          className="space-y-2 p-4 text-gray-200 hover:bg-gray-500 hover:bg-opacity-20"
         >
           <p className="text-xl font-bold text-gray-200">Skills</p>
-          <div className="flex flex-col md:flex-row justify-between gap-y-2">
+          <div className="flex flex-col justify-between gap-y-2 md:flex-row">
             <p className="font-semibold">Languages</p>
             <div className="flex flex-row flex-wrap gap-2">
               <SkillBadge name="Python" />
@@ -141,7 +141,7 @@ export default function Home() {
               <SkillBadge name="C#" />
             </div>
           </div>
-          <div className="flex flex-col md:flex-row justify-between gap-y-2">
+          <div className="flex flex-col justify-between gap-y-2 md:flex-row">
             <p className="font-semibold">Frameworks</p>
             <div className="flex flex-row flex-wrap gap-2">
               <SkillBadge name="React" />
@@ -152,7 +152,7 @@ export default function Home() {
               <SkillBadge name="DotNet Core" />
             </div>
           </div>
-          <div className="flex flex-col md:flex-row justify-between gap-y-2">
+          <div className="flex flex-col justify-between gap-y-2 md:flex-row">
             <p className="font-semibold">Technologies</p>
             <div className="flex flex-row flex-wrap gap-2">
               <SkillBadge name="Azure" />
@@ -166,7 +166,7 @@ export default function Home() {
         </div>
         <div
           id="projects"
-          className="p-4 hover:bg-gray-500 hover:bg-opacity-20 text-md font-gray-200 space-y-2"
+          className="text-md font-gray-200 space-y-2 p-4 hover:bg-gray-500 hover:bg-opacity-20"
         >
           <p className="text-xl font-bold">Projects</p>
           <div className="animate-pulse duration-500">Coming Soon...</div>
@@ -174,10 +174,10 @@ export default function Home() {
 
         <div
           id="education"
-          className="p-4 hover:bg-gray-500 hover:bg-opacity-20 text-md font-gray-200 space-y-2"
+          className="text-md font-gray-200 space-y-2 p-4 hover:bg-gray-500 hover:bg-opacity-20"
         >
           <p className="text-xl font-bold">Education</p>
-          <div className="flex flex-col justify-start md:flex-row md:justify-between md:items-center">
+          <div className="flex flex-col justify-start md:flex-row md:items-center md:justify-between">
             <p className="font-semibold">
               Indian Institute of Technology Kharagpur
             </p>
@@ -206,7 +206,7 @@ export default function Home() {
       </div>
       <section
         id="footer"
-        className="text-center p-8 text-gray-500 text-sm space-y-2"
+        className="space-y-2 p-8 text-center text-sm text-gray-500"
       >
         Built with <strong>NextJS</strong> and <strong>TailwindCSS</strong>
         {", "}

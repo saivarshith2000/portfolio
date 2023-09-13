@@ -13,7 +13,7 @@ export default function GradientText({
     <p
       className={cn(
         "bg-gradient-to-r from-pink-400 to-red-400 bg-clip-text text-transparent",
-        className
+        className,
       )}
     >
       {text}

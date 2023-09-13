@@ -10,20 +10,20 @@ type ExperienceCardPropType = {
 
 export default function ExperienceCard(props: ExperienceCardPropType) {
   return (
-    <div className="space-y-2 p-4 hover:bg-gray-500 hover:bg-opacity-20 rounded-md">
-      <div className="flex flex-col justify-start md:flex-row md:justify-between font-semibold">
+    <div className="space-y-2 rounded-md p-4 hover:bg-gray-500 hover:bg-opacity-20">
+      <div className="flex flex-col justify-start font-semibold md:flex-row md:justify-between">
         <p>{props.titleLeft}</p>
         <p>{props.titleRight}</p>
       </div>
-      <li className="text-gray-400 text-sm">
+      <li className="text-sm text-gray-400">
         {props.intro}
-        <ul className="list-disc list-inside">
+        <ul className="list-inside list-disc">
           {props.bullets.map((b) => (
             <li key={b}>{b}</li>
           ))}
         </ul>
       </li>
-      <div className="flex flex-row gap-2 items-center flex-wrap">
+      <div className="flex flex-row flex-wrap items-center gap-2">
         {props.skills.map((s) => (
           <SkillBadge name={s} key={s} />
         ))}
